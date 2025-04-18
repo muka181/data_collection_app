@@ -8,11 +8,16 @@ export const DataProvider = ({ children }) => {
   const [rows, setRows] = useState([]);
 
   return (
-    <DataContext.Provider value={{
-      columns, setColumns,
-      columnValues, setColumnValues,
-      rows, setRows,
-    }}>
+    <DataContext.Provider
+      value={{
+        columns,
+        setColumns,
+        columnValues,
+        setColumnValues,
+        rows,
+        setRows,
+      }}
+    >
       {children}
     </DataContext.Provider>
   );
